@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(to bottom right, #141e30, #243b55);
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+.add-task {
+  text-align: center;
+}
+.task-txt {
+  border: 5px solid #d3cdcd;
+  border-radius: 12px;
+  padding: 5px 10px;
+  outline: none;
+  width: 35%;
+  height: 40px;
+}
+.task-date {
+  padding: 20px 0;
+}
+.task-date > input {
+  outline: none;
+  border-radius: 12px;
+  padding: 4px;
+}
+.button-add:link,
+.button-add:visited {
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #141e30;
+  text-transform: uppercase;
+  /* font-weight: 600; */
+  background-color: white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button-add:hover {
+  transform: translateY(-3px);
+}
+.button-add:focus {
+  transform: translateY(1px);
+}
+.list {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.list-li {
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  list-style-type: none;
+  margin: 15px 0;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.li-text {
+  flex: 3;
+  padding: 10px 15px;
+  text-align: center;
+}
+.li-time {
+  border-left: 2px solid #141e30;
+  border-right: 2px solid #141e30;
+  padding: 5px 15px;
+  flex: 1;
+  text-align: center;
+}
+.btn {
+  flex: 1;
+  text-align: center;
+}
+.btn-style {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #243b55;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.btn-style:hover {
+  background-color: #243b55;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .list {
+    width: 75%;
+  }
+  .task-txt {
+    width: 50%;
+  }
+}
+
+@media (max-width: 840px) {
+  .list {
+    width: 90%;
+  }
+  .task-txt {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .list {
+    width: 75%;
+  }
+  .list-li {
+    width: 75%;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 15px auto;
+  }
+  .btnEdit {
+    padding: 10px 0;
+    width: 50%;
+  }
+}
